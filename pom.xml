@@ -69,7 +69,7 @@
 					<version>3.0.0-M3</version>
 					<configuration>
 						<suiteXmlFiles> 
-							<suiteXmlFile>TC_005_NormalAppointmentFlow.xml</suiteXmlFile>
+							<suiteXmlFile>TC_001_CreateLeads.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
