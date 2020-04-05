@@ -37,13 +37,13 @@ public class CommonActions extends SeleniumBase {
 	}
 	
 	@DataProvider(name = "getData")
-		public String[][] getCreateData() throws IOException
+		public Object[][] getCreateData() throws IOException
 		{
 			//String [][] data = ReadExcelData.readData("CreateLeads.xlsx","LeadData");
 			//String [][] data = ReadExcelData.readData("EditLeads.xlsx", "Edit");
 			//String[][] data = ReadExcelData.readData("MergeLeads.xlsx", "Merge");
 			String[][] data = ReadExcelData.readData(workBookName,workSheetName);
-			return data;
+			return new Object[][] {{data},};
 			//return ;
 		}
 	

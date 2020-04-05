@@ -25,8 +25,15 @@ public class ReadExcelData {
 			XSSFRow row = wsheet.getRow(i);
 			for (int j = 0; j < lastColNum; j++) 
 			{
-				String excelValue = row.getCell(j).getStringCellValue();
-				dataArray[i-1][j]=excelValue;
+				if(row.getCell(j).getStringCellValue()!=null)
+				{
+					String excelValue = row.getCell(j).getStringCellValue();
+					dataArray[i-1][j]=excelValue;
+				}
+				else
+				{
+					dataArray[i-1][j]= "";
+				}
 			}
 
 		}
